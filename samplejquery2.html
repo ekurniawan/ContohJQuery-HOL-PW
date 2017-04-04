@@ -16,7 +16,7 @@
         <input type="text" id="txtAlas" placeholder="masukan alas"><br><br>
 
         <label for="txtTinggi">Masukan Tinggi :</label><br>
-        <input type="text" id="txtAlas" placeholder="masukan Tinggi"><br><br>
+        <input type="text" id="txtTinggi" placeholder="masukan Tinggi"><br><br>
 
         <label for="txtHasil">Hasil :</label><br>
         <input type="text" id="txtHasil" readonly="readonly"><br><br>
@@ -37,6 +37,7 @@
                 
                 var hasil = 0.5 * alas * tinggi;
                 
+                //alert(alas + " " + tinggi);
                 $("#txtHasil").val(hasil);
             });
             
