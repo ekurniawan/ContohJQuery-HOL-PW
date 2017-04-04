@@ -7,7 +7,16 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-    
+    <p id="par1"></p><br>
+    <button type="button" id="btnHello">Hello</button>
+
     <script src="js/jquery-3.2.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnHello").click(function(){
+                $("#par1").html("<strong>Hello World !</strong>")
+            });
+        });
+    </script>
     </body>
 </html>
