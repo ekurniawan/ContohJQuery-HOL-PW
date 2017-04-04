@@ -9,6 +9,20 @@
     <body>
     <p id="par1"></p><br>
     <button type="button" id="btnHello">Hello</button>
+    <hr>
+    <fieldset>
+        <legend>Hitung Luas Segitiga</legend>
+        <label for="txtAlas">Masukan Alas :</label><br>
+        <input type="text" id="txtAlas" placeholder="masukan alas"><br><br>
+
+        <label for="txtTinggi">Masukan Tinggi :</label><br>
+        <input type="text" id="txtAlas" placeholder="masukan Tinggi"><br><br>
+
+        <label for="txtHasil">Hasil :</label><br>
+        <input type="text" id="txtHasil" readonly="readonly"><br><br>
+
+        <button type="button" id="btnHitung">Hitung</button>
+    </fieldset>
 
     <script src="js/jquery-3.2.0.min.js"></script>
     <script>
@@ -16,6 +30,16 @@
             $("#btnHello").click(function(){
                 $("#par1").html("<strong>Hello World !</strong>")
             });
+            
+            $("#btnHitung").click(function(){
+                var alas = parseFloat($("#txtAlas").val());
+                var tinggi = parseFloat($("#txtTinggi").val());
+                
+                var hasil = 0.5 * alas * tinggi;
+                
+                $("#txtHasil").val(hasil);
+            });
+            
         });
     </script>
     </body>
